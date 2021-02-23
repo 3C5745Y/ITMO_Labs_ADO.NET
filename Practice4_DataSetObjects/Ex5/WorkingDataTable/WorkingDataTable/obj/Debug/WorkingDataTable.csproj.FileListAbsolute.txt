@@ -1,0 +1,10 @@
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex5\WorkingDataTable\WorkingDataTable\obj\Debug\WorkingDataTable.csprojAssemblyReference.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex5\WorkingDataTable\WorkingDataTable\obj\Debug\WorkingDataTable.Form1.resources
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex5\WorkingDataTable\WorkingDataTable\obj\Debug\WorkingDataTable.Properties.Resources.resources
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex5\WorkingDataTable\WorkingDataTable\obj\Debug\WorkingDataTable.csproj.GenerateResource.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex5\WorkingDataTable\WorkingDataTable\obj\Debug\WorkingDataTable.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex5\WorkingDataTable\WorkingDataTable\bin\Debug\WorkingDataTable.exe.config
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex5\WorkingDataTable\WorkingDataTable\bin\Debug\WorkingDataTable.exe
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex5\WorkingDataTable\WorkingDataTable\bin\Debug\WorkingDataTable.pdb
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex5\WorkingDataTable\WorkingDataTable\obj\Debug\WorkingDataTable.exe
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex5\WorkingDataTable\WorkingDataTable\obj\Debug\WorkingDataTable.pdb

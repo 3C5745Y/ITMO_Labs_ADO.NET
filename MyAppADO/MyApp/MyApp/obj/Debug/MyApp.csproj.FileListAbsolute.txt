@@ -1,0 +1,11 @@
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\MyAppADO\MyApp\MyApp\bin\Debug\MyApp.exe.config
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\MyAppADO\MyApp\MyApp\bin\Debug\MyApp.exe
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\MyAppADO\MyApp\MyApp\bin\Debug\MyApp.pdb
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\MyAppADO\MyApp\MyApp\obj\Debug\MyApp.csprojAssemblyReference.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\MyAppADO\MyApp\MyApp\obj\Debug\MyApp.Properties.Resources.resources
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\MyAppADO\MyApp\MyApp\obj\Debug\MyApp.csproj.GenerateResource.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\MyAppADO\MyApp\MyApp\obj\Debug\MyApp.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\MyAppADO\MyApp\MyApp\obj\Debug\MyApp.exe
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\MyAppADO\MyApp\MyApp\obj\Debug\MyApp.pdb
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\MyAppADO\MyApp\MyApp\obj\Debug\MyApp.Internships.resources
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\MyAppADO\MyApp\MyApp\obj\Debug\MyApp.Input.resources

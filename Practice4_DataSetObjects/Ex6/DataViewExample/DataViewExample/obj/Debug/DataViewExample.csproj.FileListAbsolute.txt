@@ -1,0 +1,10 @@
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex6\DataViewExample\DataViewExample\bin\Debug\DataViewExample.exe.config
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex6\DataViewExample\DataViewExample\bin\Debug\DataViewExample.exe
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex6\DataViewExample\DataViewExample\bin\Debug\DataViewExample.pdb
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex6\DataViewExample\DataViewExample\obj\Debug\DataViewExample.csprojAssemblyReference.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex6\DataViewExample\DataViewExample\obj\Debug\DataViewExample.Form1.resources
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex6\DataViewExample\DataViewExample\obj\Debug\DataViewExample.Properties.Resources.resources
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex6\DataViewExample\DataViewExample\obj\Debug\DataViewExample.csproj.GenerateResource.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex6\DataViewExample\DataViewExample\obj\Debug\DataViewExample.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex6\DataViewExample\DataViewExample\obj\Debug\DataViewExample.exe
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex6\DataViewExample\DataViewExample\obj\Debug\DataViewExample.pdb

@@ -1,0 +1,10 @@
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex3\DataAdapterWizard\DataAdapterWizard\bin\Debug\DataAdapterWizard.exe.config
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex3\DataAdapterWizard\DataAdapterWizard\bin\Debug\DataAdapterWizard.exe
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex3\DataAdapterWizard\DataAdapterWizard\bin\Debug\DataAdapterWizard.pdb
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex3\DataAdapterWizard\DataAdapterWizard\obj\Debug\DataAdapterWizard.csprojAssemblyReference.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex3\DataAdapterWizard\DataAdapterWizard\obj\Debug\DataAdapterWizard.Form1.resources
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex3\DataAdapterWizard\DataAdapterWizard\obj\Debug\DataAdapterWizard.Properties.Resources.resources
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex3\DataAdapterWizard\DataAdapterWizard\obj\Debug\DataAdapterWizard.csproj.GenerateResource.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex3\DataAdapterWizard\DataAdapterWizard\obj\Debug\DataAdapterWizard.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex3\DataAdapterWizard\DataAdapterWizard\obj\Debug\DataAdapterWizard.exe
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice4_DataSetObjects\Ex3\DataAdapterWizard\DataAdapterWizard\obj\Debug\DataAdapterWizard.pdb

@@ -1,0 +1,10 @@
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice3_IDEDataConnection\Ex3\DBCommand\DBCommand\obj\Debug\DBCommand.csprojAssemblyReference.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice3_IDEDataConnection\Ex3\DBCommand\DBCommand\obj\Debug\DBCommand.Form1.resources
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice3_IDEDataConnection\Ex3\DBCommand\DBCommand\obj\Debug\DBCommand.Properties.Resources.resources
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice3_IDEDataConnection\Ex3\DBCommand\DBCommand\obj\Debug\DBCommand.csproj.GenerateResource.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice3_IDEDataConnection\Ex3\DBCommand\DBCommand\obj\Debug\DBCommand.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice3_IDEDataConnection\Ex3\DBCommand\DBCommand\bin\Debug\DBCommand.exe.config
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice3_IDEDataConnection\Ex3\DBCommand\DBCommand\bin\Debug\DBCommand.exe
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice3_IDEDataConnection\Ex3\DBCommand\DBCommand\bin\Debug\DBCommand.pdb
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice3_IDEDataConnection\Ex3\DBCommand\DBCommand\obj\Debug\DBCommand.exe
+\\Mac\Home\Documents\Study\7_ADO.NET\ITMO_Labs_ADO\Practice3_IDEDataConnection\Ex3\DBCommand\DBCommand\obj\Debug\DBCommand.pdb
