@@ -24,7 +24,7 @@ namespace MyApp {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class MentorsInternsDataSet : global::System.Data.DataSet {
         
-        private Mentors_InternsDataTable tableMentors_Interns;
+        private MentorsInternsDataTable tableMentorsInterns;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace MyApp {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Mentors_Interns"] != null)) {
-                    base.Tables.Add(new Mentors_InternsDataTable(ds.Tables["Mentors_Interns"]));
+                if ((ds.Tables["MentorsInterns"] != null)) {
+                    base.Tables.Add(new MentorsInternsDataTable(ds.Tables["MentorsInterns"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace MyApp {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Mentors_InternsDataTable Mentors_Interns {
+        public MentorsInternsDataTable MentorsInterns {
             get {
-                return this.tableMentors_Interns;
+                return this.tableMentorsInterns;
             }
         }
         
@@ -152,8 +152,8 @@ namespace MyApp {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Mentors_Interns"] != null)) {
-                    base.Tables.Add(new Mentors_InternsDataTable(ds.Tables["Mentors_Interns"]));
+                if ((ds.Tables["MentorsInterns"] != null)) {
+                    base.Tables.Add(new MentorsInternsDataTable(ds.Tables["MentorsInterns"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace MyApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableMentors_Interns = ((Mentors_InternsDataTable)(base.Tables["Mentors_Interns"]));
+            this.tableMentorsInterns = ((MentorsInternsDataTable)(base.Tables["MentorsInterns"]));
             if ((initTable == true)) {
-                if ((this.tableMentors_Interns != null)) {
-                    this.tableMentors_Interns.InitVars();
+                if ((this.tableMentorsInterns != null)) {
+                    this.tableMentorsInterns.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace MyApp {
             this.Namespace = "http://tempuri.org/MentorsInternsDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableMentors_Interns = new Mentors_InternsDataTable();
-            base.Tables.Add(this.tableMentors_Interns);
+            this.tableMentorsInterns = new MentorsInternsDataTable();
+            base.Tables.Add(this.tableMentorsInterns);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeMentors_Interns() {
+        private bool ShouldSerializeMentorsInterns() {
             return false;
         }
         
@@ -270,23 +270,29 @@ namespace MyApp {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void Mentors_InternsRowChangeEventHandler(object sender, Mentors_InternsRowChangeEvent e);
+        public delegate void MentorsInternsRowChangeEventHandler(object sender, MentorsInternsRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Mentors_InternsDataTable : global::System.Data.TypedTableBase<Mentors_InternsRow> {
+        public partial class MentorsInternsDataTable : global::System.Data.TypedTableBase<MentorsInternsRow> {
             
-            private global::System.Data.DataColumn columnMentorId;
+            private global::System.Data.DataColumn columnInternName;
             
-            private global::System.Data.DataColumn columnInternId;
+            private global::System.Data.DataColumn columnInternLastName;
+            
+            private global::System.Data.DataColumn columnMentorName;
+            
+            private global::System.Data.DataColumn columnMentorLastName;
+            
+            private global::System.Data.DataColumn columnDepartment;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Mentors_InternsDataTable() {
-                this.TableName = "Mentors_Interns";
+            public MentorsInternsDataTable() {
+                this.TableName = "MentorsInterns";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -294,7 +300,7 @@ namespace MyApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal Mentors_InternsDataTable(global::System.Data.DataTable table) {
+            internal MentorsInternsDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -311,24 +317,48 @@ namespace MyApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected Mentors_InternsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected MentorsInternsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn MentorIdColumn {
+            public global::System.Data.DataColumn InternNameColumn {
                 get {
-                    return this.columnMentorId;
+                    return this.columnInternName;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn InternIdColumn {
+            public global::System.Data.DataColumn InternLastNameColumn {
                 get {
-                    return this.columnInternId;
+                    return this.columnInternLastName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn MentorNameColumn {
+                get {
+                    return this.columnMentorName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn MentorLastNameColumn {
+                get {
+                    return this.columnMentorLastName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn DepartmentColumn {
+                get {
+                    return this.columnDepartment;
                 }
             }
             
@@ -343,46 +373,49 @@ namespace MyApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Mentors_InternsRow this[int index] {
+            public MentorsInternsRow this[int index] {
                 get {
-                    return ((Mentors_InternsRow)(this.Rows[index]));
+                    return ((MentorsInternsRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Mentors_InternsRowChangeEventHandler Mentors_InternsRowChanging;
+            public event MentorsInternsRowChangeEventHandler MentorsInternsRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Mentors_InternsRowChangeEventHandler Mentors_InternsRowChanged;
+            public event MentorsInternsRowChangeEventHandler MentorsInternsRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Mentors_InternsRowChangeEventHandler Mentors_InternsRowDeleting;
+            public event MentorsInternsRowChangeEventHandler MentorsInternsRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Mentors_InternsRowChangeEventHandler Mentors_InternsRowDeleted;
+            public event MentorsInternsRowChangeEventHandler MentorsInternsRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddMentors_InternsRow(Mentors_InternsRow row) {
+            public void AddMentorsInternsRow(MentorsInternsRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Mentors_InternsRow AddMentors_InternsRow(int MentorId, int InternId) {
-                Mentors_InternsRow rowMentors_InternsRow = ((Mentors_InternsRow)(this.NewRow()));
+            public MentorsInternsRow AddMentorsInternsRow(string InternName, string InternLastName, string MentorName, string MentorLastName, string Department) {
+                MentorsInternsRow rowMentorsInternsRow = ((MentorsInternsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        MentorId,
-                        InternId};
-                rowMentors_InternsRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowMentors_InternsRow);
-                return rowMentors_InternsRow;
+                        InternName,
+                        InternLastName,
+                        MentorName,
+                        MentorLastName,
+                        Department};
+                rowMentorsInternsRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowMentorsInternsRow);
+                return rowMentorsInternsRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Mentors_InternsDataTable cln = ((Mentors_InternsDataTable)(base.Clone()));
+                MentorsInternsDataTable cln = ((MentorsInternsDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -390,49 +423,63 @@ namespace MyApp {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Mentors_InternsDataTable();
+                return new MentorsInternsDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnMentorId = base.Columns["MentorId"];
-                this.columnInternId = base.Columns["InternId"];
+                this.columnInternName = base.Columns["InternName"];
+                this.columnInternLastName = base.Columns["InternLastName"];
+                this.columnMentorName = base.Columns["MentorName"];
+                this.columnMentorLastName = base.Columns["MentorLastName"];
+                this.columnDepartment = base.Columns["Department"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnMentorId = new global::System.Data.DataColumn("MentorId", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMentorId);
-                this.columnInternId = new global::System.Data.DataColumn("InternId", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnInternId);
+                this.columnInternName = new global::System.Data.DataColumn("InternName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnInternName);
+                this.columnInternLastName = new global::System.Data.DataColumn("InternLastName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnInternLastName);
+                this.columnMentorName = new global::System.Data.DataColumn("MentorName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMentorName);
+                this.columnMentorLastName = new global::System.Data.DataColumn("MentorLastName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMentorLastName);
+                this.columnDepartment = new global::System.Data.DataColumn("Department", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDepartment);
+                this.columnInternName.MaxLength = 20;
+                this.columnInternLastName.MaxLength = 100;
+                this.columnMentorName.MaxLength = 20;
+                this.columnMentorLastName.MaxLength = 100;
+                this.columnDepartment.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Mentors_InternsRow NewMentors_InternsRow() {
-                return ((Mentors_InternsRow)(this.NewRow()));
+            public MentorsInternsRow NewMentorsInternsRow() {
+                return ((MentorsInternsRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Mentors_InternsRow(builder);
+                return new MentorsInternsRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Mentors_InternsRow);
+                return typeof(MentorsInternsRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Mentors_InternsRowChanged != null)) {
-                    this.Mentors_InternsRowChanged(this, new Mentors_InternsRowChangeEvent(((Mentors_InternsRow)(e.Row)), e.Action));
+                if ((this.MentorsInternsRowChanged != null)) {
+                    this.MentorsInternsRowChanged(this, new MentorsInternsRowChangeEvent(((MentorsInternsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -440,8 +487,8 @@ namespace MyApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Mentors_InternsRowChanging != null)) {
-                    this.Mentors_InternsRowChanging(this, new Mentors_InternsRowChangeEvent(((Mentors_InternsRow)(e.Row)), e.Action));
+                if ((this.MentorsInternsRowChanging != null)) {
+                    this.MentorsInternsRowChanging(this, new MentorsInternsRowChangeEvent(((MentorsInternsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -449,8 +496,8 @@ namespace MyApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Mentors_InternsRowDeleted != null)) {
-                    this.Mentors_InternsRowDeleted(this, new Mentors_InternsRowChangeEvent(((Mentors_InternsRow)(e.Row)), e.Action));
+                if ((this.MentorsInternsRowDeleted != null)) {
+                    this.MentorsInternsRowDeleted(this, new MentorsInternsRowChangeEvent(((MentorsInternsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -458,14 +505,14 @@ namespace MyApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Mentors_InternsRowDeleting != null)) {
-                    this.Mentors_InternsRowDeleting(this, new Mentors_InternsRowChangeEvent(((Mentors_InternsRow)(e.Row)), e.Action));
+                if ((this.MentorsInternsRowDeleting != null)) {
+                    this.MentorsInternsRowDeleting(this, new MentorsInternsRowChangeEvent(((MentorsInternsRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveMentors_InternsRow(Mentors_InternsRow row) {
+            public void RemoveMentorsInternsRow(MentorsInternsRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -492,7 +539,7 @@ namespace MyApp {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Mentors_InternsDataTable";
+                attribute2.FixedValue = "MentorsInternsDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -536,71 +583,155 @@ namespace MyApp {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Mentors_InternsRow : global::System.Data.DataRow {
+        public partial class MentorsInternsRow : global::System.Data.DataRow {
             
-            private Mentors_InternsDataTable tableMentors_Interns;
+            private MentorsInternsDataTable tableMentorsInterns;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal Mentors_InternsRow(global::System.Data.DataRowBuilder rb) : 
+            internal MentorsInternsRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableMentors_Interns = ((Mentors_InternsDataTable)(this.Table));
+                this.tableMentorsInterns = ((MentorsInternsDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int MentorId {
+            public string InternName {
                 get {
                     try {
-                        return ((int)(this[this.tableMentors_Interns.MentorIdColumn]));
+                        return ((string)(this[this.tableMentorsInterns.InternNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'MentorId\' in table \'Mentors_Interns\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'InternName\' in table \'MentorsInterns\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableMentors_Interns.MentorIdColumn] = value;
+                    this[this.tableMentorsInterns.InternNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int InternId {
+            public string InternLastName {
                 get {
                     try {
-                        return ((int)(this[this.tableMentors_Interns.InternIdColumn]));
+                        return ((string)(this[this.tableMentorsInterns.InternLastNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'InternId\' in table \'Mentors_Interns\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'InternLastName\' in table \'MentorsInterns\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableMentors_Interns.InternIdColumn] = value;
+                    this[this.tableMentorsInterns.InternLastNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsMentorIdNull() {
-                return this.IsNull(this.tableMentors_Interns.MentorIdColumn);
+            public string MentorName {
+                get {
+                    try {
+                        return ((string)(this[this.tableMentorsInterns.MentorNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MentorName\' in table \'MentorsInterns\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableMentorsInterns.MentorNameColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetMentorIdNull() {
-                this[this.tableMentors_Interns.MentorIdColumn] = global::System.Convert.DBNull;
+            public string MentorLastName {
+                get {
+                    try {
+                        return ((string)(this[this.tableMentorsInterns.MentorLastNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MentorLastName\' in table \'MentorsInterns\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableMentorsInterns.MentorLastNameColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsInternIdNull() {
-                return this.IsNull(this.tableMentors_Interns.InternIdColumn);
+            public string Department {
+                get {
+                    try {
+                        return ((string)(this[this.tableMentorsInterns.DepartmentColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Department\' in table \'MentorsInterns\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableMentorsInterns.DepartmentColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetInternIdNull() {
-                this[this.tableMentors_Interns.InternIdColumn] = global::System.Convert.DBNull;
+            public bool IsInternNameNull() {
+                return this.IsNull(this.tableMentorsInterns.InternNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetInternNameNull() {
+                this[this.tableMentorsInterns.InternNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsInternLastNameNull() {
+                return this.IsNull(this.tableMentorsInterns.InternLastNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetInternLastNameNull() {
+                this[this.tableMentorsInterns.InternLastNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsMentorNameNull() {
+                return this.IsNull(this.tableMentorsInterns.MentorNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetMentorNameNull() {
+                this[this.tableMentorsInterns.MentorNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsMentorLastNameNull() {
+                return this.IsNull(this.tableMentorsInterns.MentorLastNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetMentorLastNameNull() {
+                this[this.tableMentorsInterns.MentorLastNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsDepartmentNull() {
+                return this.IsNull(this.tableMentorsInterns.DepartmentColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetDepartmentNull() {
+                this[this.tableMentorsInterns.DepartmentColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -608,22 +739,22 @@ namespace MyApp {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class Mentors_InternsRowChangeEvent : global::System.EventArgs {
+        public class MentorsInternsRowChangeEvent : global::System.EventArgs {
             
-            private Mentors_InternsRow eventRow;
+            private MentorsInternsRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Mentors_InternsRowChangeEvent(Mentors_InternsRow row, global::System.Data.DataRowAction action) {
+            public MentorsInternsRowChangeEvent(MentorsInternsRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Mentors_InternsRow Row {
+            public MentorsInternsRow Row {
                 get {
                     return this.eventRow;
                 }

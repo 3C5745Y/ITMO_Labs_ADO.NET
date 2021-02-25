@@ -12,11 +12,44 @@
   <xs:element name="MentorsInternsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="MentorsInternsDataSet" msprop:Generator_DataSetName="MentorsInternsDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Mentors_Interns" msprop:Generator_TableClassName="Mentors_InternsDataTable" msprop:Generator_TableVarName="tableMentors_Interns" msprop:Generator_TablePropName="Mentors_Interns" msprop:Generator_RowDeletingName="Mentors_InternsRowDeleting" msprop:Generator_RowChangingName="Mentors_InternsRowChanging" msprop:Generator_RowEvHandlerName="Mentors_InternsRowChangeEventHandler" msprop:Generator_RowDeletedName="Mentors_InternsRowDeleted" msprop:Generator_UserTableName="Mentors_Interns" msprop:Generator_RowChangedName="Mentors_InternsRowChanged" msprop:Generator_RowEvArgName="Mentors_InternsRowChangeEvent" msprop:Generator_RowClassName="Mentors_InternsRow">
+        <xs:element name="MentorsInterns" msprop:Generator_TableClassName="MentorsInternsDataTable" msprop:Generator_TableVarName="tableMentorsInterns" msprop:Generator_TablePropName="MentorsInterns" msprop:Generator_RowDeletingName="MentorsInternsRowDeleting" msprop:Generator_RowChangingName="MentorsInternsRowChanging" msprop:Generator_RowEvHandlerName="MentorsInternsRowChangeEventHandler" msprop:Generator_RowDeletedName="MentorsInternsRowDeleted" msprop:Generator_UserTableName="MentorsInterns" msprop:Generator_RowChangedName="MentorsInternsRowChanged" msprop:Generator_RowEvArgName="MentorsInternsRowChangeEvent" msprop:Generator_RowClassName="MentorsInternsRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="MentorId" msprop:Generator_ColumnVarNameInTable="columnMentorId" msprop:Generator_ColumnPropNameInRow="MentorId" msprop:Generator_ColumnPropNameInTable="MentorIdColumn" msprop:Generator_UserColumnName="MentorId" type="xs:int" minOccurs="0" />
-              <xs:element name="InternId" msprop:Generator_ColumnVarNameInTable="columnInternId" msprop:Generator_ColumnPropNameInRow="InternId" msprop:Generator_ColumnPropNameInTable="InternIdColumn" msprop:Generator_UserColumnName="InternId" type="xs:int" minOccurs="0" />
+              <xs:element name="InternName" msprop:Generator_ColumnVarNameInTable="columnInternName" msprop:Generator_ColumnPropNameInRow="InternName" msprop:Generator_ColumnPropNameInTable="InternNameColumn" msprop:Generator_UserColumnName="InternName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InternLastName" msprop:Generator_ColumnVarNameInTable="columnInternLastName" msprop:Generator_ColumnPropNameInRow="InternLastName" msprop:Generator_ColumnPropNameInTable="InternLastNameColumn" msprop:Generator_UserColumnName="InternLastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MentorName" msprop:Generator_ColumnVarNameInTable="columnMentorName" msprop:Generator_ColumnPropNameInRow="MentorName" msprop:Generator_ColumnPropNameInTable="MentorNameColumn" msprop:Generator_UserColumnName="MentorName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MentorLastName" msprop:Generator_ColumnVarNameInTable="columnMentorLastName" msprop:Generator_ColumnPropNameInRow="MentorLastName" msprop:Generator_ColumnPropNameInTable="MentorLastNameColumn" msprop:Generator_UserColumnName="MentorLastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_UserColumnName="Department" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

@@ -22,106 +22,133 @@ namespace MyApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'internshipsDataSet.Interns' table. You can move, or remove it, as needed.
-            this.internsTableAdapter.Fill(this.internshipsDataSet.Interns);
-            internsTableAdapter1.Fill(this.myAppDataSet.Interns);
-            projectsTableAdapter1.Fill(this.myAppDataSet.Projects);
+            using (SqlConnection connection = new SqlConnection(connectionstring))
+            {
+                try
+                {
+                    connection.Open();
+                    this.internsTableAdapter1.Fill(this.myAppDataSet.Interns);
+                    this.projectsTableAdapter1.Fill(this.myAppDataSet.Projects);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
+            Input f2 = new Input();
+
             using (SqlConnection connection = new SqlConnection(connectionstring))
             {
-                string cmd_text;
-                Input f2 = new Input();
+                string cmd_text = "INSERT INTO dbo.Interns(FirstName, LastName, University, Email)" +
+                    " VALUES (@firstName, @lastName, @university, @email)";
 
                 if (f2.ShowDialog() == DialogResult.OK)
-                {//изменить на параметры?
-                    cmd_text = "INSERT INTO dbo.Interns VALUES (" + "'" + f2.firstNameTextBox.Text + "' , '" +
-                    f2.lastNameTextBox.Text + "' , '" +
-                    f2.UniTextBox.Text + "' , '" +
-                    f2.MailTextBox.Text + "')";
+                {
 
-                    // изменить на using
-                    //SqlConnection sql_conn = new SqlConnection(connection);
-                   
-                    SqlCommand sql_comm = new SqlCommand(cmd_text, connection);
+                    SqlCommand command = new SqlCommand(cmd_text, connection);
+                    command.Parameters.AddWithValue("@FirstName", f2.firstNameTextBox.Text);
+                    command.Parameters.AddWithValue("@lastName", f2.lastNameTextBox.Text);
+                    command.Parameters.AddWithValue("@university", f2.UniTextBox.Text);
+                    command.Parameters.AddWithValue("@email", f2.MailTextBox.Text);
 
-                    //не отображает сразу данные введенные ??
                     try
                     {
                         connection.Open();
-                        sql_comm.ExecuteNonQuery();
+                        command.ExecuteNonQuery();
+                        this.internsTableAdapter1.Fill(this.myAppDataSet.Interns);
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message);
                     }
-                    this.internsTableAdapter.Fill(this.internshipsDataSet.Interns);
                 }
             }
         }
 
         private void EditButton_Click(object sender, EventArgs e)
         {
-            //string cmd_text;
-            //Input f2 = new Input();
-            //int index;
-            //string firstName;
+            Input f2 = new Input();
+            int index;
+            string firstName;
 
-            //index = InternsDataGridView.CurrentRow.Index;
-            //firstName = Convert.ToString(InternsDataGridView[0, index].Value);
+            index = InternsDataGridView.CurrentRow.Index;
+            firstName = Convert.ToString(InternsDataGridView[1, index].Value);
+            f2.firstNameTextBox.Text = firstName;
+            f2.lastNameTextBox.Text = Convert.ToString(InternsDataGridView[2, index].Value);
+            f2.UniTextBox.Text = Convert.ToString(InternsDataGridView[3, index].Value);
+            f2.MailTextBox.Text = Convert.ToString(InternsDataGridView[4, index].Value);
 
-            //f2.firstNameTextBox.Text = firstName;
-            //f2.lastNameTextBox.Text = Convert.ToString(InternsDataGridView[1, index].Value);
-            //f2.UniTextBox.Text = Convert.ToString(InternsDataGridView[2, index].Value);
-            //f2.MailTextBox.Text = Convert.ToString(InternsDataGridView[3, index].Value);
+            using (SqlConnection connection = new SqlConnection(connectionstring))
+            {
+                string cmd_text = "UPDATE dbo.Interns SET FirstName = @firstname, LastName = @lastname, University = @university, Email = @email WHERE FirstName = '" + firstName + "'";
 
-            //if (f2.ShowDialog() == DialogResult.OK)
-            //{
-            //    cmd_text = "UPDATE dbo.Interns SET FirstName = '" + f2.firstNameTextBox.Text + "', '" +
-            //    "'[LastName] = '" + f2.lastNameTextBox.Text + "', '" +
-            //    "'[University] = '" + f2.UniTextBox.Text + "', '" +
-            //    "'Email = '" + f2.MailTextBox.Text +
-            //    "WHERE FirstName = '" + firstName + "'";
-
-            //    SqlConnection sql_conn = new SqlConnection(connection);
-            //    SqlCommand sql_comm = new SqlCommand(cmd_text, sql_conn);
-
-            //    sql_conn.Open();
-            //    sql_comm.ExecuteNonQuery();
-            //    sql_conn.Close();
-
-            //    this.internsTableAdapter.Fill(this.internshipsDataSet.Interns);
-
-            //}
+                if (f2.ShowDialog() == DialogResult.OK)
+                {
+                    SqlCommand command = new SqlCommand(cmd_text, connection);
+                    command.Parameters.AddWithValue("@FirstName", f2.firstNameTextBox.Text);
+                    command.Parameters.AddWithValue("@lastName", f2.lastNameTextBox.Text);
+                    command.Parameters.AddWithValue("@university", f2.UniTextBox.Text);
+                    command.Parameters.AddWithValue("@email", f2.MailTextBox.Text);
+                    try
+                    {
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                        this.internsTableAdapter1.Fill(this.myAppDataSet.Interns);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
         }
 
         private void DelButton_Click(object sender, EventArgs e)
         {
-            //string cmd_text = "DELETE FROM dbo.Interns";
-            //int index;
-            //string firstName;
+            int index;
+            string firstName;
 
-            //index = InternsDataGridView.CurrentRow.Index;
-            //firstName = Convert.ToString(InternsDataGridView[0, index].Value);
-            //cmd_text = "DELETE FROM dbo.Interns WHERE [Interns].[FirstName] = '" + firstName + "'";
+            index = InternsDataGridView.CurrentRow.Index;
+            firstName = Convert.ToString(InternsDataGridView[1, index].Value);
+            string cmd_text = "DELETE FROM dbo.Interns WHERE FirstName = '" + firstName + "'";
 
-            //SqlConnection sql_conn = new SqlConnection(connection);
-            //SqlCommand sql_comm = new SqlCommand(cmd_text, sql_conn);
+            using (SqlConnection connection = new SqlConnection(connectionstring))
+            {
 
-            //sql_conn.Open();
-            //sql_comm.ExecuteNonQuery();
-            //sql_conn.Close();
+                SqlCommand command = new SqlCommand(cmd_text, connection);
 
-            //this.internsTableAdapter.Fill(this.internshipsDataSet.Interns);
-
+                try
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    this.internsTableAdapter1.Fill(this.myAppDataSet.Interns);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
-
-        private void MentorsButton_Click(object sender, EventArgs e)
+        private void ShowMentorsInternsbutton_Click(object sender, EventArgs e)
         {
-            dataGridView3.DataSource = mentorsInternsDataSet1.Mentors_Interns;
-            sqlDataAdapter2.Fill(mentorsInternsDataSet1.Mentors_Interns);
+            using (SqlConnection connection = new SqlConnection(connectionstring))
+            {
+                try
+                {
+                    connection.Open();
+                    dataGridView3.DataSource = mentorsInternsDataSet1.MentorsInterns;
+                    this.sqlDataAdapter3.Fill(this.mentorsInternsDataSet1.MentorsInterns);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
+
     }
 }

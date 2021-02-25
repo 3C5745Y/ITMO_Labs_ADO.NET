@@ -59,16 +59,6 @@
     <Compile Include="Input.Designer.cs">
       <DependentUpon>Input.cs</DependentUpon>
     </Compile>
-    <Compile Include="InternshipsDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>InternshipsDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="MentorsDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MentorsDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="MentorsInternsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -96,28 +86,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="InternshipsDataSet.xsc">
-      <DependentUpon>InternshipsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="InternshipsDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>InternshipsDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="InternshipsDataSet.xss">
-      <DependentUpon>InternshipsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="MentorsDataSet.xsc">
-      <DependentUpon>MentorsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="MentorsDataSet.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MentorsDataSet.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="MentorsDataSet.xss">
-      <DependentUpon>MentorsDataSet.xsd</DependentUpon>
-    </None>
     <None Include="MentorsInternsDataSet.xsc">
       <DependentUpon>MentorsInternsDataSet.xsd</DependentUpon>
     </None>
